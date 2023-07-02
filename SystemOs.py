@@ -18,10 +18,9 @@ class SystemOs:
                 for i in entries:
                     split_tup = os.path.splitext(i)
                     if(split_tup[1]==".csv"):
-                        print(i)
+                       
                         listcsv.append(i)
-                print(listcsv)
-                print(listcsv[0])
+              
                 return listcsv
                
                     

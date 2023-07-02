@@ -17,7 +17,5 @@ class mainstart:
                 path=input("enter path")
                 obj.changeDir(path)
                 list1 =obj.getCurDir()
-                print(list1)
-                print("########################################")
                 r.DataRead().datacvs(list1)
 d =mainstart()
