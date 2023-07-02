@@ -1,20 +1,20 @@
 from matplotlib import pyplot as plt  
 class Graph:
-    def LineGp(s):
+    def LineGp(s,data):
         print("************  Line Graph ********************  ")
-        plt.plot([1,2,3],[4,5,1])  
+        plt.plot(data)  
         plt.show()  
-    def BarGp(s):
+    def BarGp(s,year,sell):
         print("************  Bar Graph ********************  ")
         players = ['Virat','Rohit','Shikhar','Hardik']  
         runs = [51,87,45,67]  
-        plt.bar(players,runs,color = 'green')  
+        plt.bar(year,sell,color = 'green')  
         plt.title('Score Card')  
         plt.xlabel('Players')  
         plt.ylabel('Runs')  
         plt.show()  
                 
-    def PieChartGp(s):
+    def PieChartGp(s,data):
         print("************  PieChart Graph ********************  ")
         Players = 'Rohit', 'Virat', 'Shikhar', 'Yuvraj'  
         Runs = [45, 30, 15, 10]  

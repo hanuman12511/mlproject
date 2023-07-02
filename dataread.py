@@ -13,20 +13,20 @@ class DataRead:
                 df = pd.read_csv(path)
                 print(df.columns.values)
                 dataop = do.DataOperation()
-                dataop.getData()
+                year, sell =dataop.getData(df)
                 graph =g.Graph()
                 while True:
                     gnum= int(input("1 Line Graph\n2 Bar graphs\n3 Pie Chart\n4  Histogram\n5 Scatter plot"))
                     if gnum==1:
-                        graph.LineGp()
+                        graph.LineGp(daat)
                     elif gnum==2:
-                        graph.BarGp()
+                        graph.BarGp(year,sell)
                     elif gnum==3:
-                        graph.PieChartGp()
+                        graph.PieChartGp(daat)
                     elif gnum==4:
-                        graph.HistogramGp()
+                        graph.HistogramGp(daat)
                     elif gnum==5:
-                        graph.ScatterplotGp()
+                        graph.ScatterplotGp(daat)
                     else:
                         break
             else :
