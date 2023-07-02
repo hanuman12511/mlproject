@@ -1,6 +1,7 @@
 import pandas as pd
 import  os
 import Graph as g
+import DataOperations as do
 class DataRead:
     def datacvs(s,list1):
         while(True):
@@ -11,6 +12,8 @@ class DataRead:
                 path = os.getcwd()+"/"+list1[filename]
                 df = pd.read_csv(path)
                 print(df.columns.values)
+                dataop = do.DataOperation()
+                dataop.getData()
                 graph =g.Graph()
                 while True:
                     gnum= int(input("1 Line Graph\n2 Bar graphs\n3 Pie Chart\n4  Histogram\n5 Scatter plot"))
